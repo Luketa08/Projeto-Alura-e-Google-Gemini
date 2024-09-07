@@ -1,0 +1,32 @@
+<!DOCTYPE html> <!-- Declara que o documento é um documento HTML5. -->
+<html lang="pt-br"> <!-- Define o idioma principal do documento como português do Brasil. -->
+
+<head> <!--  Contém metadados sobre a página, como o conjunto de caracteres, a viewport e o título -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Acidentes aéreos</title>
+</head>
+
+<body> <!-- Contém o conteúdo visível da página. -->
+     <header> <!-- Representa cabeçalho -->
+        <h1>Eventos que mudaram a segurança da aviação</h1>
+    </header>
+     <main> <!-- Representa conteúdo principal  -->
+        <section>
+            <input type="text" placeholder="Digite um acidente" id = "campo-pesquisa"> <!--  onde coloca a pesquisa -->
+            <button onclick="pesquisar()">Pesquisar</button> <!--  A função pesquisar() mencionada no botão está definida no arquivo app.js. -->
+        </section>
+        <section class="resultados-pesquisa" id = "resultados-pesquisa"> <!--  A seção "resultados-pesquisa" será preenchida dinamicamente com os resultados da pesquisa, utilizando JavaScript para manipular o DOM (Document Object Model). -->
+        </section>
+    </main>
+    <footer> <!-- Representa rodapé -->
+        <p>2024 - Acidentes aéros que mudaram a história da aviação. Todos os direitos reservado;</p>
+        <p>Entre em contato pelo email: lucca.ferraz.lf@gmail.com</p>
+        
+    </footer> 
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
