@@ -44,8 +44,17 @@ function pesquisar() {
         <a href="${dado.link}" target="_blank">Veja mais sobre</a>
       </div>`;
        } 
-
-  // Atribui o HTML gerado para a seção de resultados
-  section.innerHTML = resultados;
-      }
-   }
+    }
+    // se resultados não exitir
+    if (!resultados) {
+      // então faça isso
+      resultados = "<p>Nenhum acidente encontrado<p>"
+  
+    }
+  
+    // Atribui o HTML gerado para a seção de resultados
+    section.innerHTML = resultados;
+        }
+     
+    
+  
